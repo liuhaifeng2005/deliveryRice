@@ -237,7 +237,7 @@
 	.container{width:1000px}
 }
 @media (min-width:769px){
-	.w{min-width:1200px;}
+	/*.w{min-width:1200px;}*/
 }
 
 @media (max-width:768px){
