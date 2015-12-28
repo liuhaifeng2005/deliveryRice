@@ -57,10 +57,26 @@ jQuery(function () {
 	(function () {
 		//页面相关参数初始化
 		deliveryRice.pageInit();
+		var processor = {
+	        timeoutId : null,
+	        //实际处理方法
+	        performProcessing : function(){
+	            //定位
+				deliveryRice.scrollFix();
+	        },
+	        //初始处理调用方法
+	        process : function(){
+	            clearTimeout(this.timeoutId);
+	            var that  = this;
+	            this.timeoutId = setTimeout(function(){
+	                that.performProcessing();
+	            }, 50)
+	        }
+	    }
 		// 滚动检测
 		jQuery(window).scroll(function(){
-			//浮动模块
-			deliveryRice.scrollFix();
+			processor.process();
+			
 		});
 		//页面定位
 		jQuery("#jsNavMenu li").on("click",function() {

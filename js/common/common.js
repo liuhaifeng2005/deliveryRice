@@ -65,7 +65,6 @@ deliveryRice.pageInit = function() {
 	// 记录每一个page-num模块高度
 	var pageNumLength = jQuery(".page-num").length;
 	for(var i = 0; i < pageNumLength; i++) {
-		console.log(i+"****"+jQuery(".page-num").eq(i).offset().top)
 		deliveryRice.pageArray.push(jQuery(".page-num").eq(i).offset().top);
 	}	
 }
@@ -76,6 +75,11 @@ deliveryRice.scrollFix = function() {
 		if(deliveryRice.pageArray[i] <= deliveryRice.getScrollTop()) {
 			jQuery("#jsNavMenu li").removeClass("curt").eq(i).addClass("curt");
 		}
+	}
+	if(deliveryRice.getScrollTop()<=50){
+		$(".nav-m").removeClass("min-hide");
+	}else{
+		$(".nav-m").addClass("min-hide");
 	}
 }
 
