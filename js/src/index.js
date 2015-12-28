@@ -61,21 +61,29 @@ jQuery(function () {
 	        timeoutId : null,
 	        //实际处理方法
 	        performProcessing : function(){
+	        	console.log("函数节流")
 	            //定位
 				deliveryRice.scrollFix();
 	        },
 	        //初始处理调用方法
-	        process : function(){
+	       /* process : function(){
 	            clearTimeout(this.timeoutId);
 	            var that  = this;
 	            this.timeoutId = setTimeout(function(){
 	                that.performProcessing();
-	            }, 50)
+	            }, 500)
+	        }*/
+	        // 简化写法
+	        throttle: function(method, content){
+	        	clearTimeout(method.timeoutId);
+	        	method.timeoutId = setTimeout(function(){
+	                method.call(content);
+	            }, 100)
 	        }
 	    }
 		// 滚动检测
 		jQuery(window).scroll(function(){
-			processor.process();
+			processor.throttle(processor.performProcessing);
 			
 		});
 		//页面定位
