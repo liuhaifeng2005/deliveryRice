@@ -252,4 +252,8 @@
 	.float-box{width:100%;}
 	.float-box .form-info{padding:8%;}
 	.fun-wrap .section{padding-right:0;}
+	.banner-wrap .tips h1 strong{font-size:36px;}
+	.banner-wrap .tips .phone-num{font-size:24px;}
+	.choice-wrap .section p,.fun-wrap .section p,.equipment-wrap .section p,.area-service .section p{font-size:14px;}
+	.equipment-wrap .section{margin-bottom:30px;}
 }
