@@ -7,10 +7,10 @@
  */
  html,body,p{font-family:'微软雅黑',sans-serif;}
  .container{padding:0;}
-.w{width:100%;margin:0 auto;overflow:hidden;}
+.w{margin-right:100px;overflow:hidden;}
 .relative{position:relative;}
 .transitionAll{transition: all .3s ease;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-ms-transition: all .3s ease;-o-transition: all .3s ease;-webkit-backface-visibility: hidden;}
-.tips .arrow-icon,.year-icon,.month-icon,.scan-icon{background-image:url(../images/icon.png);background-repeat:no-repeat;}
+.tips .arrow-icon,.year-icon,.month-icon,.scan-icon,.icon-choice1,.icon-choice2,.icon-choice3{background-image:url(../images/icon.png);background-repeat:no-repeat;}
 .mg0{margin:0!important;}
 .pd0{padding:0!important;}
 .mgb{margin-bottom:0!important;}
@@ -37,11 +37,15 @@
 .banner-wrap .tips .arrow-icon{width:80px;height:21px;background-position:0 0;margin:0 auto;cursor:pointer;position:absolute;left:50%;bottom:20px;margin-left:-40px;}
 /*选择我们*/
 .choice-wrap{width:100%;background:url(../images/rice02.png) repeat;padding-bottom:40px;}
-.choice-wrap .pic{width:76%;margin:0 auto;padding-top:40px;}
-.choice-wrap .pic-m{width:100%;margin:0 auto;padding-top:40px;}
+.choice-wrap .pic{width:76%;margin:0 auto;padding-top:40px;position:relative;}
+.choice-wrap h2{font-weight:bold;font-family:"微软雅黑";font-size:30px;color:#000;position:absolute;left:55px;top:35px;line-height:26px;width:100%;}
+.choice-wrap h2 span{font-size:18px;font-weight:normal;font-family:Times New Roman;}
+.choice-wrap .pic-m{width:100%;margin:0 auto;padding-top:40px;position:relative;}
+.choice-wrap .pic-m h2{font-size:24px;line-height:22px;text-align:center;left:0;top:25px;}
+.choice-wrap .pic-m h2 span{font-size:16px;}
 .choice-wrap .pic img,.choice-wrap .pic-m img{width:100%;max-width:1466px;}
 .choice-wrap .section{}
-.choice-wrap .section h3{font-size:24px;line-height:35px;color:#56441f;font-weight:normal;}
+.choice-wrap .section h3{font-size:24px;line-height:35px;color:#56441f;font-weight:normal;font-family:"宋体";}
 .choice-wrap h3 em{margin:0 8px 0 10px;font-size:20px;font-family:arial;}
 .choice-wrap h3 span{font-size:14px;font-family:Times New Roman; }
 .choice-wrap .section p{font-size:12px;line-height:18px;color:#56441f;font-family:"宋体";}
@@ -50,11 +54,11 @@
 .fun-wrap h2{font-size:18px;margin:50px 0;font-family:Times New Roman;font-weight:normal;color:#fff;display:none;}
 .fun-wrap h2 strong{font-size:30px;font-weight:bold;font-family:"微软雅黑";}
 .fun-wrap .section{margin-bottom:30px;padding-right:40px;}
-.fun-wrap .section h3{font-size:24px;line-height:35px;font-weight:normal;}
+.fun-wrap .section h3{font-size:24px;line-height:35px;font-weight:normal;font-family:"宋体";}
 .fun-wrap h3 em{margin:0 8px 0 10px;font-size:20px;font-family:arial;}
 .fun-wrap h3 span{font-size:14px;font-family:Times New Roman; }
 .fun-wrap .section p{font-size:12px;line-height:20px;font-family:"宋体";}
-.fun-wrap .txt{line-height:36px;}
+.fun-wrap .txt{line-height:36px;font-family:"宋体";}
 .fun-wrap .txt span{margin-right:10px;font-size:12px;}
 .fun-wrap .fR{}
 .machine-intro{margin-top:65px;}
@@ -98,7 +102,7 @@
 .area-service{width:100%;padding-bottom:30px;background:url("../images/rice03.png") repeat;color:#d8c396;}
 .area-service .h2-tit{color:#fff;}
 .area-service .section{margin-bottom:30px;padding-right:40px;}
-.area-service .section h3{font-size:24px;line-height:35px;font-weight:normal;}
+.area-service .section h3{font-size:24px;line-height:35px;font-weight:normal;font-family:"宋体";}
 .area-service h3 em{margin:0 8px 0 10px;font-size:20px;font-family:arial;}
 .area-service h3 span{font-size:14px;font-family:Times New Roman; }
 .area-service .section p{font-size:12px;line-height:20px;font-family:"宋体";}
@@ -108,7 +112,7 @@
 .area-service h5{font-size:24px;line-height:60px;text-align:center;font-family:'宋体';font-weight:normal;margin:20px auto 40px;}
 .area-service .fee-table{width:100%;display:table;}
 .area-service .fee-table dt,.area-service .fee-table dd{height:50px;display:table-row;line-height:50px;font-size:12px;}
-.area-service .fee-table span{display:table-cell;border-top:1px solid #d8c396;}
+.area-service .fee-table span{display:table-cell;border-top:1px solid #d8c396;font-family:'宋体';}
 /*关于我们*/
 .about-us{width:100%;background:url("../images/rice02.png") repeat;color:#56441f;}
 .about-us .pic-txt{}
@@ -116,10 +120,10 @@
 .about-us .pic-txt p{max-width:150px;font-size:12px;line-height:18px;margin:10px auto;font-family:'宋体';text-align:center;}
 /*联系我们*/
 .contact-us{background-position:center center;background-repeat: no-repeat;background-size:cover;background-image:url(../images/rice03.jpg);color:#fff;padding:40px 0 280px;background-attachment: fixed;}
-.contact-us h2{font-size:18px;line-height:30px;font-family:Times New Roman;font-weight:normal;}
+.contact-us h2{font-size:18px;line-height:30px;font-family:Times New Roman;font-weight:normal;margin-bottom:60px;}
 .contact-us h2 strong{font-size:30px;font-weight:bold;font-size:bold;}
 .contact-us .section{margin-bottom:30px;padding-right:40px;}
-.contact-us .section h3{font-size:24px;line-height:35px;font-weight:normal;}
+.contact-us .section h3{font-size:24px;line-height:35px;font-weight:normal;font-family:"宋体";}
 .contact-us h3 em{margin:0 8px 0 10px;font-size:20px;font-family:arial;}
 .contact-us h3 span{font-size:14px;font-family:Times New Roman; }
 .contact-us .section p{font-size:12px;line-height:36px;font-family:"宋体";}
@@ -127,16 +131,16 @@
 .contact-us .form-info{padding-top:40px;}
 .contact-us .form-info .label-box{width:98%;height:38px;line-height:38px;border:1px solid #decbaa;background:rgba(255,255,255,.2);margin-bottom:10px;overflow:hidden;display:block;margin-left:2%;font-family:"宋体";font-size:14px;}
 .contact-us .form-info .bdwhite{border-color:#fff;}
-.contact-us .form-info .label-box input{width:67%;background:transparent;height:38px;border:0;}
-.contact-us .form-info .label-box span{margin:0 10px;}
-.contact-us .form-info .check-box{width:98%;height:38px;line-height:38px;border:1px solid #decbaa;background:rgba(255,255,255,.2);margin-bottom:10px;overflow:hidden;display:block;margin-left:2%;font-family:"宋体";font-size:14px;}
-.contact-us .check-box .check-input{text-align:center;border:2px solid transparent;height:36px;line-height:36px;cursor:pointer;}
-.contact-us .check-box .choice{border-color:#fff;}
+.contact-us .form-info .label-box input{width:67%;background:transparent;height:38px;border:0;font-weight:normal;}
+.contact-us .form-info .label-box span{margin:0 10px;font-weight:normal;}
+.contact-us .form-info .check-box{width:98%;height:38px;line-height:38px;background:rgba(255,255,255,.2);margin-bottom:10px;overflow:hidden;display:block;margin-left:2%;font-family:"宋体";font-size:14px;}
+.contact-us .check-box .check-input{text-align:center;height:38px;line-height:36px;cursor:pointer;border:1px solid #decbaa;}
+.contact-us .check-box .choice{border:2px solid #fff;}
 .contact-us .check-input span{margin-right:5px;display:none;}
-.contact-us .choice span{display:inline-block;}
+.contact-us .choice span{display:inline-block;vertical-align:middle;margin-top:-5px;}
 .contact-us .more{margin-left:2%;height:38px;margin-bottom:10px;}
 .contact-us .more a{color:#fff;line-height:38px;}
-.contact-us .s-btn{width:170px;height:40px;background:#fff;margin:0 auto;color:#56441f;font-size:12px;display:block;cursor:pointer;border-radius:2px;border:0;}
+.contact-us .s-btn{width:170px;height:40px;background:#fff;margin:22px auto 0;color:#56441f;font-size:12px;display:block;cursor:pointer;border-radius:2px;border:0;}
 .contact-us-m{padding:20px 8% 40px;background:url("../images/rice02.png") repeat;color:#56441f;}
 .contact-us-m .section{margin-bottom:30px;padding-right:40px;}
 .contact-us-m .section h3{font-size:24px;line-height:35px;font-weight:normal;}
@@ -196,9 +200,9 @@
 .nav .weixin{margin:0 auto;width:80px;height:112px;cursor:pointer;position:absolute;left:10px;bottom:20px;background:#fff;}
 .nav .qrcode{width:80px;height:80px;display:none;}
 .nav .weixin:hover .qrcode{display:block;}
-.nav .scan{width:80px;height:80px;}
+.nav .scan{width:80px;height:122px;}
 .nav .weixin:hover .scan{display:none;}
-.nav .scan .scan-icon{width:40px;height:40px;background-position:-80px -21px;margin:0 auto 6px;}
+.nav .scan .scan-icon{width:72px;height:80px;background-position:-80px -21px;margin:10px auto 6px;}
 .nav .scan p{font-size:12px;line-height:20px;text-align:center;}
 .nav .scan p span{font-size:10px;-webkit-text-size-adjust:none;}
 .nav .join-now{width:79px;height:22px;border:1px solid #56441f;text-align:center;line-height:18px;margin:10px auto 0;}
@@ -220,19 +224,22 @@
 .float-box .form-info .bdwhite{border-color:#56441f;}
 .float-box .form-info .label-box input{width:67%;height:38px;border:0;background-color:transparent;}
 .float-box .form-info .label-box span{margin:0 10px;}
-.float-box .form-info .check-box{width:100%;height:38px;line-height:38px;border:1px solid #e6e6e6;background:rgba(255,255,255,.2);margin-bottom:10px;overflow:hidden;display:block;font-family:"宋体";font-size:14px;}
-.float-box .check-box .check-input{width:50%;text-align:center;border:2px solid transparent;height:36px;line-height:36px;cursor:pointer;float:left;background:#f2f2f2;}
-.float-box .check-box .choice{border-color:#56441f;background:#fff;color:#56441f;}
+.float-box .form-info .check-box{width:100%;height:38px;line-height:38px;background:rgba(255,255,255,.2);margin-bottom:10px;overflow:hidden;display:block;font-family:"宋体";font-size:14px;}
+.float-box .check-box .check-input{width:50%;text-align:center;height:36px;line-height:36px;cursor:pointer;float:left;background:#f2f2f2;border:1px solid #e6e6e6;}
+.float-box .check-box .choice{border:2px solid #56441f;background:#fff;color:#56441f;}
 .float-box .check-input span{margin-right:5px;display:none;color:#54bb10;}
-.float-box .choice span{display:inline-block;}
+.float-box .choice span{display:inline-block;vertical-align:middle;margin-top:-5px; }
 .float-box .more{height:38px;margin-bottom:10px;}
 .float-box .more a{color:#999;line-height:38px;font-weight:normal;}
-.float-box .s-btn{width:170px;height:40px;background:#54bb10;margin:0 auto;color:#fff;font-size:12px;display:block;cursor:pointer;border-radius:2px;border:0;}
+.float-box .s-btn{width:170px;height:40px;background:#54bb10;margin:15px auto 0;color:#fff;font-size:12px;display:block;cursor:pointer;border-radius:2px;border:0;}
 .float-box .tip-box{position:relative;text-align:center;padding:30% 0;font-size:14px;color:#56441f;}
 .float-box .tip-box span{color:#54bb10;font-size:40px;}
 .float-box .tip-box .close-btn{width:80px;height:48px;font-size:12px;cursor:pointer;line-height:48px;position:absolute;right:20px;top:20px;}
 .float-box .tip-box .close-btn span{font-size:42px;color:#56441f;vertical-align:middle;display:inline-block;font-family:'宋体';font-weight:lighter;margin-top:-4px;margin-left:10px;}
 
+.icon-choice1{display:inline-block;width:16px;height:16px;background-position:-100px 0;}
+.icon-choice2{display:inline-block;width:16px;height:16px;background-position:-120px 0;}
+.icon-choice3{display:inline-block;width:40px;height:40px;background-position:-152px 0;}
 @media (min-width:1030px){
 	.w{min-width:1200px;}
 	.container{width:1000px}
@@ -242,6 +249,7 @@
 }
 
 @media (max-width:768px){
+	.w{width:100%;margin:0 auto;}
 	.container{padding:0 8%;}
 	.fun-wrap .fR{float:none;}
 	.min-Show{display:none!important;}
