@@ -10,7 +10,7 @@
 .w{margin-right:100px;overflow:hidden;}
 .relative{position:relative;}
 .transitionAll{transition: all .3s ease;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-ms-transition: all .3s ease;-o-transition: all .3s ease;-webkit-backface-visibility: hidden;}
-.tips .arrow-icon,.year-icon,.month-icon,.scan-icon,.icon-choice1,.icon-choice2,.icon-choice3{background-image:url(../images/icon.png);background-repeat:no-repeat;}
+.tips .arrow-icon,.year-icon,.month-icon,.scan-icon,.icon-choice1,.icon-choice2,.icon-choice3,.machine-intro .arrow-icon{background-image:url(../images/icon.png);background-repeat:no-repeat;}
 .mg0{margin:0!important;}
 .pd0{padding:0!important;}
 .mgb{margin-bottom:0!important;}
@@ -35,6 +35,7 @@
 .banner-wrap .tips p{font-size:12px;line-height:45px;margin-bottom:0;}
 .banner-wrap .tips .phone-num{font-size:30px;line-height:20px;margin-top:30px;font-weight:bold;}
 .banner-wrap .tips .arrow-icon{width:80px;height:21px;background-position:0 0;margin:0 auto;cursor:pointer;position:absolute;left:50%;bottom:20px;margin-left:-40px;}
+.show-num4{cursor:pointer;}
 /*选择我们*/
 .choice-wrap{width:100%;background:url(../images/rice02.png) repeat;padding-bottom:40px;}
 .choice-wrap .pic{width:76%;margin:0 auto;padding-top:40px;position:relative;}
@@ -63,9 +64,9 @@
 .fun-wrap .fR{}
 .machine-intro{margin-top:65px;}
 .machine-intro .carousel-control.left,.machine-intro .carousel-control.right{background:none;}
-.machine-intro .glyphicon{width:30px;height:30px;font-size:30px;display:inline-block;margin-top:-10px;position:absolute;top:50%;z-index:5;}
-.machine-intro .glyphicon-menu-left{left:-10px;}
-.machine-intro .glyphicon-menu-right{left:auto;right:-10px;}
+.machine-intro .carousel-control .arrow-icon{display:inline-block;width:16px;height:28px;position:absolute;top:50%;z-index:5;margin-top:-8px;}
+.machine-intro .carousel-control .arrow-left{left:-10px;background-position:-152px -61px;}
+.machine-intro .carousel-control .arrow-right{left:auto;right:-10px;background-position:-168px -61px;}
 .machine-intro .item img{width:100%;}
 .fun-wrap .tips{margin-top:10px;margin-bottom:40px;font-size:24px;line-height:36px;font-family:'宋体';line-height:36px;text-align:center;}
 .fun-wrap .tips span{font-size:12px;}
@@ -158,7 +159,7 @@
 .time-line dl dt .year-icon{width:80px;height:80px;background-position:0 -21px;text-align:center;line-height:80px;}
 .time-line dl dd .month-icon{width:20px;height:20px;background-position:-80px 0;}
 .time-line dl dd h5{font-family:'宋体';font-size:12px;font-weight:normal;}
-.time-line dl dd p{font-size:24px;}
+.time-line dl dd p{font-size:24px;font-family:'宋体';}
 /*焦点图*/
 .slide-focus{position:relative;width:100%;max-width:100%;overflow: hidden;margin:0 auto;}
 .slide-focus:after{content:'';display:block;width: 100%;padding-top:100%;}
@@ -194,7 +195,7 @@
 .nav .menu{width:80px;padding:0;margin-left:10px;}
 .nav .menu li{width:80px;height:20px;padding:0 5px 0 10px;font-size:12px;color:#56441f;list-style: none;line-height:20px;cursor:pointer;margin-bottom:15px;}
 .nav .menu li:hover{background:#bbb4a5;color:#fff;}
-.nav .menu li .arrow{width:0;height:0;border:8px solid #fff;border-color:transparent #fff transparent transparent;display:inline-block;float:right;vertical-align:middle;margin-top:2px;}
+.nav .menu li .arrow{width:0;height:0;border:5px solid #fff;border-color:transparent #fff transparent transparent;display:inline-block;float:right;vertical-align:middle;margin-top:5px;}
 .nav .menu li span{float:left;}
 .nav .menu .curt{background:#bbb4a5;color:#fff;}
 .nav .weixin{margin:0 auto;width:80px;height:112px;cursor:pointer;position:absolute;left:10px;bottom:80px;background:#fff;}
