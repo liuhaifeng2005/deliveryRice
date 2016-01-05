@@ -256,7 +256,6 @@ jQuery(function () {
 	        timeoutId : null,
 	        //实际处理方法
 	        performProcessing : function(){
-	        	console.log("函数节流")
 	            //定位
 				deliveryRice.scrollFix();
 	        },
@@ -268,7 +267,6 @@ jQuery(function () {
 	                that.performProcessing();
 	            }, 500)
 	        }*/
-	        // 简化写法
 	        throttle: function(method, content){
 	        	clearTimeout(method.timeoutId);
 	        	method.timeoutId = setTimeout(function(){
@@ -284,9 +282,12 @@ jQuery(function () {
 		//页面定位
 		jQuery("#jsNavMenu li").on("click",function() {
 			var pos = jQuery(this).attr("data-pos");
-			deliveryRice.pageSlide(pos, 0, 800);
+			deliveryRice.pageSlide(pos, -30, 800);
 		});
 
+		jQuery(".show-num4").on("click",function() {
+			deliveryRice.pageSlide("pageNum4", 0, 800);
+		});
 		//移动端页面定位
 		jQuery("#jsNavMenu-m dd").on("click",function() {
 			var pos = jQuery(this).attr("data-pos");
