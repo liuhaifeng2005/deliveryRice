@@ -10,7 +10,7 @@
 .w{margin-right:100px;overflow:hidden;}
 .relative{position:relative;}
 .transitionAll{transition: all .3s ease;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-ms-transition: all .3s ease;-o-transition: all .3s ease;-webkit-backface-visibility: hidden;}
-.tips .arrow-icon,.year-icon,.month-icon,.scan-icon,.icon-choice1,.icon-choice2,.icon-choice3,.machine-intro .arrow-icon,.sale-icon,.warn-icon{background-image:url(../images/icon.png);background-repeat:no-repeat;}
+.tips .arrow-icon,.year-icon,.month-icon,.scan-icon,.icon-choice1,.icon-choice2,.icon-choice3,.machine-intro .arrow-icon,.sale-icon,.warn-icon{background-image:url(http://source.mishangmen.com/img/icon.png);background-repeat:no-repeat;}
 .mg0{margin:0!important;}
 .pd0{padding:0!important;}
 .mgb{margin-bottom:0!important;}
