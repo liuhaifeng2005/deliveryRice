@@ -10,7 +10,7 @@
 .w{margin-right:100px;overflow:hidden;}
 .relative{position:relative;}
 .transitionAll{transition: all .3s ease;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-ms-transition: all .3s ease;-o-transition: all .3s ease;-webkit-backface-visibility: hidden;}
-.tips .arrow-icon,.year-icon,.month-icon,.scan-icon,.icon-choice1,.icon-choice2,.icon-choice3,.machine-intro .arrow-icon,.sale-icon{background-image:url(http://source.mishangmen.com/img/icon.png);background-repeat:no-repeat;}
+.tips .arrow-icon,.year-icon,.month-icon,.scan-icon,.icon-choice1,.icon-choice2,.icon-choice3,.machine-intro .arrow-icon,.sale-icon,.warn-icon{background-image:url(../images/icon.png);background-repeat:no-repeat;}
 .mg0{margin:0!important;}
 .pd0{padding:0!important;}
 .mgb{margin-bottom:0!important;}
@@ -139,9 +139,10 @@
 .contact-us .check-box .choice{border:2px solid #fff;}
 .contact-us .check-input span{margin-right:5px;display:none;}
 .contact-us .choice span{display:inline-block;vertical-align:middle;margin-top:-5px;}
-.contact-us .more{margin-left:2%;height:38px;margin-bottom:10px;}
+.contact-us .more{margin-left:2%;height:38px;margin-bottom:10px;color:#fff;line-height:38px;display:none;}
+.contact-us .more .warn-icon{display:inline-block;vertical-align:middle;margin-top:0px;margin-right:5px;width:16px;height:16px;background-position:-168px -40px;}
 .contact-us .more a{color:#fff;line-height:38px;}
-.contact-us .s-btn{width:170px;height:40px;background:#fff;margin:22px auto 0;color:#56441f;font-size:12px;display:block;cursor:pointer;border-radius:2px;border:0;}
+.contact-us .s-btn{width:170px;height:40px;background:#fff;margin:0 auto;color:#56441f;font-size:12px;display:block;cursor:pointer;border-radius:2px;border:0;}
 .contact-us-m{padding:20px 8% 40px;background:url("http://source.mishangmen.com/img/rice02.png") repeat;color:#56441f;}
 .contact-us-m .section{margin-bottom:30px;padding-right:40px;}
 .contact-us-m .section h3{font-size:24px;line-height:35px;font-weight:normal;font-family:"宋体";}
@@ -231,9 +232,10 @@
 .float-box .check-box .choice{border:2px solid #56441f;background:#fff;color:#56441f;}
 .float-box .check-input span{margin-right:5px;display:none;color:#54bb10;}
 .float-box .choice span{display:inline-block;vertical-align:middle;margin-top:-5px; }
-.float-box .more{height:38px;margin-bottom:10px;}
+.float-box .more{height:38px;margin-bottom:10px;color:#999;line-height:38px;font-weight:normal;display:none;}
+.float-box .more .warn-icon{display:inline-block;vertical-align:middle;margin-top:0px;margin-right:5px;width:16px;height:16px;background-position:-152px -40px;}
 .float-box .more a{color:#999;line-height:38px;font-weight:normal;}
-.float-box .s-btn{width:170px;height:40px;background:#54bb10;margin:15px auto 0;color:#fff;font-size:12px;display:block;cursor:pointer;border-radius:2px;border:0;}
+.float-box .s-btn{width:170px;height:40px;background:#54bb10;margin:0px auto;color:#fff;font-size:12px;display:block;cursor:pointer;border-radius:2px;border:0;}
 .float-box .tip-box{position:relative;text-align:center;padding:30% 0;font-size:14px;color:#56441f;}
 .float-box .tip-box span{color:#54bb10;font-size:40px;}
 .float-box .tip-box .close-btn{width:80px;height:48px;font-size:12px;cursor:pointer;line-height:48px;position:absolute;right:20px;top:20px;}

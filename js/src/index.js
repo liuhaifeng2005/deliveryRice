@@ -120,8 +120,19 @@ jQuery(function () {
 	});
 
 	jQuery(".s-btn").click(function(){
-		jQuery("#js-joinUs").hide();
-		deliveryRice.showDialog("js-subSuccess");
+		var obj = $(this),
+		formInfo = obj.parents(".form-info"),
+		nameValue = formInfo.find(".name").val(),
+		phoneValue = formInfo.find(".phone").val(),
+		more = formInfo.find(".more");
+		if(/^[\u4e00-\u9fa5]+$/i.test(nameValue)&&/^\d+$/i.test(phoneValue)){
+			jQuery("#js-joinUs").hide();
+			deliveryRice.showDialog("js-subSuccess");
+		}else{
+			more.show();
+		}
+		//jQuery("#js-joinUs").hide();
+		//deliveryRice.showDialog("js-subSuccess");
 	});
 
 });
